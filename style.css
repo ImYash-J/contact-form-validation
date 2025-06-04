@@ -1,0 +1,117 @@
+/* Reset and basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #333;
+}
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow:
+    0 10px 15px rgba(102, 126, 234, 0.3),
+    0 4px 6px rgba(118, 75, 162, 0.2);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4b0082;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  outline-offset: 2px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px #667eeaaa;
+}
+
+.tooltip {
+  height: 18px;
+  margin: 5px 0 12px 0;
+  color: #e63946;
+  font-size: 0.87rem;
+  font-weight: 600;
+  min-height: 18px;
+  min-width: 1px;
+  user-select: none;
+  font-style: italic;
+}
+
+.input-error {
+  border-color: #e63946 !important;
+  box-shadow: 0 0 5px #e63946aa !important;
+}
+
+.input-valid {
+  border-color: #2a9d8f !important;
+  box-shadow: 0 0 5px #2a9d8faa !important;
+}
+
+.contact-form button {
+  width: 100%;
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.contact-form button:hover {
+  background-color: #764ba2;
+}
+
+.success {
+  margin-top: 16px;
+  font-weight: 600;
+  color: #2a9d8f;
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.success.show {
+  opacity: 1;
+}
